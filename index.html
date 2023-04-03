@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <title>Dockinoco Daily Report</title>
-    <link rel="stylesheet" href="css/styls.css">
-</head>
-<body>
-    <h1>Dockinoco Daily Report</h1>
-    <p>2023年3月21日</p>
-    <p></p>
+<html>
+  <head>
+    <title>Photo Sharing Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Photo Sharing</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-</body>
+    <main>
+      <section id="photo-grid">
+        <div class="photo">
+          <img src="https://via.placeholder.com/500x500.png?text=Photo+1" alt="Photo 1">
+        </div>
+        <div class="photo">
+          <img src="https://via.placeholder.com/500x500.png?text=Photo+2" alt="Photo 2">
+        </div>
+        <div class="photo">
+          <img src="https://via.placeholder.com/500x500.png?text=Photo+3" alt="Photo 3">
+        </div>
+        <div class="photo">
+          <img src="https://via.placeholder.com/500x500.png?text=Photo+4" alt="Photo 4">
+        </div>
+      </section>
 
+      <section id="upload-form">
+        <h2>Upload a Photo</h2>
+        <form action="#" method="post">
+          <label for="photo-file">Choose a file:</label>
+          <input type="file" id="photo-file" name="photo-file">
+          <br>
+          <label for="photo-caption">Caption:</label>
+          <textarea id="photo-caption" name="photo-caption"></textarea>
+          <br>
+          <input type="submit" value="Upload">
+        </form>
+      </section>
+    </main>
 
-
-
-
-
+    <footer>
+      <p>&copy; 2023 Photo Sharing</p>
+    </footer>
+  </body>
 </html>
